@@ -1,0 +1,104 @@
+/*================MAIN STYLES ===============*/
+
+html, body {
+  box-sizing: border-box;
+  font-family: 'Roboto', serif;
+}
+
+.main {
+  width: 90%;
+  height: 90%;
+  margin:auto;
+ margin-bottom: 50px;
+ border: 3px outset  lightgrey;
+  box-shadow: 5px -5px darkgrey;
+  border-radius: 10px;
+  max-width: 1200px;
+}
+
+header,#searchBox{
+    position: sticky;   
+    z-index: 1;         /* Ensure it stays on top of other player divs */
+    position: -webkit-sticky;
+  top: 0; /* required */
+
+
+}
+
+#search-field {
+  display: block;
+  width: 50%;
+  max-width: 600px;
+  height: 2em;
+  padding: 5px;
+  margin: 4em auto 2em;
+  background-color: #f4f6f7;
+  border: 1px groove grey;
+  border-radius: 10px;
+}
+
+#lightgallery {
+  max-width: 300px;
+  margin: auto;
+
+}
+a{
+	margin: auto;
+}
+a img {
+  display: block;
+  width: 80%;
+  margin: 1.5em auto;
+}
+
+.caption {
+  display: none;
+}
+.hidden{  display: none;
+}
+#lg-download{display:   none}
+
+.lg-sub-html{margin-bottom:  30px;}
+/*
+
+=======================================
+=============== MEDIA QUERIES =========
+=======================================*/
+
+@media screen and (min-width: 768px ) {
+
+  #lightgallery {
+    margin: auto;
+    max-width: 800px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  a img {
+    flex: 1;
+    width: 100%;
+    padding: .5em;
+    margin: 1em auto;
+  }
+}
+
+  @media screen and (min-width: 1200px ) {
+
+    #lightgallery {
+      margin: auto;
+      max-width: 1100px;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    a img {
+      flex: 1;
+      width: 100%;
+      padding: 1em;
+      margin: 2em auto;
+    }
+  }
